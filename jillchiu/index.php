@@ -38,7 +38,7 @@
 			<div>
 				<center>
 					<a class="index_button" href="about.php" >Know me more</a>
-					<a class="index_button" href="https://github.com/jillchiu/mywebsite/tree/main/jillchiuhk">View source code</a>
+					<a class="index_button" href="https://github.com/jillchiu/myweb/tree/main/jillchiu">View source code</a>
 				</center>
 			</div>
 			
