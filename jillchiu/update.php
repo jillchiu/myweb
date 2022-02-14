@@ -17,6 +17,7 @@
 			<p>You can through here to view what I updated and going to update for this website.</p>
 			<h2>Updated</h2>
 			<p>2022/02/12 Version 1.0 releases </p>
+			<p>2022/02/14 Pictures in about.php can be pop up now --Updated main.css, about.php, script.js</p>
 			<h2>Going to update</h2>
 			<ol>
 				<li style="margin-left: 20px;">新功能 - 追加運用MYSQL部分(similar shopping cert?)</li>
