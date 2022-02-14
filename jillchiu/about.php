@@ -15,7 +15,7 @@
 	
 		<div class="common_main">
 			<div class="about_main_block1">
-				<img src="about_japan.jpg" />
+				<img class="about_img" src="about_japan.jpg" />
 				<h1>Like Japan</h1>
 				<p>I like Japan very much such as foods, cultures, dramas and games.</p>
 				<p>Therefore I learned Japanese through self-study.</p>
@@ -23,7 +23,7 @@
 			</div>
 			
 			<div class="about_main_block2">
-				<img src="about_reading.jpg" />
+				<img class="about_img" src="about_reading.jpg" />
 				<h1>Like Reading</h1>
 				<br/><br/><br/>
 				<p>I enjoy reading since I was young.</p><br/>
@@ -32,7 +32,7 @@
 			</div>
 			
 			<div class="about_main_block3">
-				<img src="about_travel.jpg" />
+				<img class="about_img" src="about_travel.jpg" />
 				<h1>Like Travel</h1>
 				<p>I had travelled to different countries, mostly in Asia.</p>
 				<p>I experienced different cultures, sceneries and food cultures through travel.</p>
@@ -40,6 +40,11 @@
 			</div>
 		</div>
 	
+		<div id="popup">
+			<span id="close">&times;</span>
+			<img id="popup_img" />
+		</div>
+		
 	</body>
 </html>
 <?php include "footer.php" ?>
