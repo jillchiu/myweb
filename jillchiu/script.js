@@ -1,3 +1,4 @@
+/* index.php part */
 //index know me more & view source code button
 $(document).ready(function(){
 	$(".index_button").mouseover(function(){
@@ -166,9 +167,9 @@ setInterval(function(){
 
 //回復輸入了的數據
 function callback($name, $email, $message){
-	$('#name').val($name);
-	$('#email').val($email);
-	$('#message').val($message);
+	$("#name").val($name);
+	$("#email").val($email);
+	$("#message").val($message);
 };
 
 //confirm before reset
@@ -216,4 +217,19 @@ $(function(){
 		
 		});
 	};
+});
+
+/* about.php part */
+
+//popup picture control
+$(function(){
+	$(".about_img").click(function(){
+		$("#popup").css("display", "block");
+		$("#popup_img").attr("src", $(this).attr("src"));
+		
+		$("#close").click(function(){
+			$("#popup").css("display", "none");
+		});
+		
+	});
 });
