@@ -418,6 +418,56 @@ header{
 	height: 68%;
 }
 
+/* click to popup picture */
+.about_img {cursor: pointer;}
+
+.about_img:hover {opacity: 0.8;}
+
+#popup {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	padding-top: 10px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: black;
+}
+
+#popup_img {
+	margin: auto;
+	display: block;
+	width: 100%;
+	max-width: 700px;
+	opacity: 1;
+}
+
+#popup_img{  
+	animation-name: zoom;
+	animation-duration: 1s;
+}
+
+@keyframes zoom {
+	from {transform:scale(0)} 
+	to {transform:scale(1)}
+}
+
+#close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#close:hover, #close:focus {
+	color: grey;
+	text-decoration: none;
+	cursor: pointer;
+}
 
 /* contact.php part */
 .contact_form_button{
