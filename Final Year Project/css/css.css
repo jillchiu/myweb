@@ -1,0 +1,141 @@
+body {
+    	background-image:url("http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/beach-wallpaper-4.jpg");
+		background-size:cover;
+		background-repeat: no-repeat;
+} 
+
+#container {
+	background:rgba(25%, 36%, 39%, 0.5);
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#head {
+	background:rgba(25%, 36%, 39%, 0.5);
+	
+}
+
+h1 {
+    color: #00FFFF;
+}
+
+h5 {
+	color: red;
+}
+
+#welcome {
+	clear: both;
+	text-align: center;
+}
+
+#search {
+	
+	clear: both;
+	text-align: center;
+}
+
+#menu_user {
+	background:rgba(30%, 19%, 40%, 0.5);
+	height: 400px;
+	width: 25%;
+	float: left;
+}
+
+#menu_admin {
+	background:rgba(48.3%, 25.8%, 25.8%, 0.5);
+	height: 400px;
+	width: 25%;
+	float: left;
+}
+
+#menu_user_extra {
+	background:rgba(30%, 19%, 40%, 0.5);
+	height: 530px;
+	width: 25%;
+	float: left;
+}
+
+#menu_admin_extra {
+	background:rgba(48.3%, 25.8%, 25.8%, 0.5);
+	height: 530px;
+	width: 25%;
+	float: left;
+}
+
+#content_extra_user {
+	background:rgba(30%, 19%, 40%, 0.5);
+	color: #BEFF54;
+	height: 530px;
+	width: 75%;
+	float: left;
+}
+
+#content_extra_admin {
+	background:rgba(48.3%, 25.8%, 25.8%, 0.5);
+	color: #BEFF54;
+	height: 530px;
+	width: 75%;
+	float: left;
+}
+
+#content {
+	background:rgba(30%, 19%, 40%, 0.5);
+	color: #BEFF54;
+	height: 400px;
+	width: 75%;
+	float: left;
+}
+
+#content_user {
+	background:rgba(30%, 19%, 40%, 0.5);
+	color: #BEFF54;
+	height: 400px;
+	width: 75%;
+	float: left;
+}
+
+#content_admin {
+	background:rgba(48.3%, 25.8%, 25.8%, 0.5);
+	color: #BEFF54;
+	height: 400px;
+	width: 75%;
+	float: left;
+}
+
+#foot {
+	clear: both;
+	color: yellow;
+	text-align: right;
+}
+
+#foot2 {
+	clear: both;
+	color: white;
+	padding: 90px;
+	text-align: right;
+}
+
+#register {
+	width: 580px;
+	float: left;
+}
+
+#login {
+	width: 200px;
+	float: right;
+}
+
+#forid {
+	background-color: #b0c4de;
+	height: 200px;
+	width: 50%;
+	float: left;
+}
+
+#forpa {
+	background-color: #b0c4de;
+	height: 200px;
+	width: 50%;
+	float: right;
+}
