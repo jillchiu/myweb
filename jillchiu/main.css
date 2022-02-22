@@ -275,7 +275,7 @@ header{
 
 .message_box  {
 	width: 400px;
-	height: 180pxl
+	height: 180px;
 	margin: 70px;
 	background-color: white;
 	border: 1px solid black;
@@ -419,9 +419,9 @@ header{
 }
 
 /* click to popup picture */
-.about_img {cursor: pointer;}
+.about_img, #pic123 {cursor: pointer;}
 
-.about_img:hover {opacity: 0.8;}
+.about_img:hover, #pic123:hover {opacity: 0.9;}
 
 #popup {
 	display: none;
@@ -439,9 +439,7 @@ header{
 #popup_img {
 	margin: auto;
 	display: block;
-	width: 100%;
-	max-width: 700px;
-	opacity: 1;
+	width: 100%;	/* 限制照片原來尺寸不超過BROWSER大小 */
 }
 
 #popup_img{  
@@ -467,6 +465,15 @@ header{
 	color: grey;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.zoom-in {
+	cursor: zoom-in;
+	max-width: 750px;
+}
+.zoom-out {
+	cursor: zoom-out;
+	max-width: none;
 }
 
 /* contact.php part */
