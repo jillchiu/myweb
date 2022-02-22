@@ -15,10 +15,10 @@
 			</a>
 				
 			<div class="dropdown_content">
-				<a href="about.php">About me</a>
+				<a href="about.php">About&nbsp;me</a>
 				<a href="update.php">Update</a>
 				<a href="profile.php">Profile</a>
-				<a href="contact.php">Contact me</a>
+				<a href="contact.php">Contact&nbsp;me</a>
 			</div>
 				
 		</div>
