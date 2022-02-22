@@ -53,7 +53,7 @@ $(function(){
 	});
 });
 
-//index pic切換
+//index buttons 切換
 $(function(){
 	
 	$("#btn1").click(function(){
@@ -101,6 +101,56 @@ $(function(){
 		$("#pic123").attr("src", "index_pic3.jpg");
 	});
 	
+});
+
+//index pictures auto play
+$(function(){
+	
+	//4sec/1pic
+	myInterval = setInterval(autoplay, 4000);
+	
+	function autoplay() {
+	  switch($("#pic123").attr("src")){
+			case "index_pic1.jpg":
+				$("#pic123").attr("src", "index_pic2.jpg");
+				$("#btn1").attr("class", "null");
+				$("#btn2").attr("class", "light");
+				break;
+			case "index_pic2.jpg":
+				$("#pic123").attr("src", "index_pic3.jpg");
+				$("#btn2").attr("class", "null");
+				$("#btn3").attr("class", "light");
+				break;
+			case "index_pic3.jpg":
+				$("#pic123").attr("src", "index_pic1.jpg");
+				$("#btn3").attr("class", "null");
+				$("#btn1").attr("class", "light");
+				break;
+		};
+	}
+	//when mouse on picture, stop loop
+	$("#pic123").mouseover(function(){
+		clearInterval(myInterval)
+	});
+	//when mouse left picture, restart loop
+	$("#pic123").mouseout(function(){
+	   myInterval = setInterval(autoplay, 4000)
+	});
+	
+});
+
+//popup picture control
+$(function(){
+	$("#pic123").click(function(){
+		$("#popup").css("display", "block");
+		$("#popup_img").attr("src", $(this).attr("src"));
+		
+		$("#close").click(function(){
+			$("#popup").css("display", "none");
+			$("#popup_img").attr("class", "zoom-in");
+		});
+		
+	});
 });
 
 //index my personality part1
@@ -229,7 +279,19 @@ $(function(){
 		
 		$("#close").click(function(){
 			$("#popup").css("display", "none");
+			$("#popup_img").attr("class", "zoom-in");
 		});
 		
+	});
+});
+
+//after popup, can view the picture in limit size or original size
+$(function(){
+	$("#popup_img").click(function(){
+		if($(this).attr("class")=="zoom-in"){
+			$(this).attr("class", "zoom-out")
+		}else{
+			$(this).attr("class", "zoom-in")
+		}
 	});
 });
