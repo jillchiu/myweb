@@ -28,6 +28,11 @@
 
 			</div>
 			
+			<div id="popup">
+				<span id="close">&times;</span>
+				<img class="zoom-in" id="popup_img" />
+			</div>
+		
 			<div class="message_box">
 					
 					<p>This is Jill Chiu</p>
