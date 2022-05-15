@@ -1,0 +1,12 @@
+update預定:  CSS改JS運行
+			navbar head foot css double部分
+解決			年份, 數字不直接輸入。 改PHP
+			INDEX照片改自動
+解決			左右兩邊非100%問題->(* {margin: 0;padding: 0;})
+			intro 字樣式在加入HEADER後變奇怪(連同MESSAGE BOX一起變透明)
+			加入快捷到不同PART(#ID)
+			網頁LOAD完後背景X秒內後SIZE由70%->100%->自動背景->LOOP
+解決			設置更嚴謹的條件FOR FORM NAME CHECKING
+			report bugs コーナー
+解決			離開頁面時彈出警告沒SAVE(FORM)
+			
