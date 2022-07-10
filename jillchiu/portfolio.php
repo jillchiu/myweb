@@ -68,6 +68,12 @@
 				System will <mark>checking</mark> the data you entered and it will show different messages by pop up window if you entered incorrectly.<br/></h3>
 			</div>
 			<div class="slide" data-anchor="slide5">
+				<img src="portfolio_second_p5.jpg" width="80%" height="80%"/>
+				<h4>Your identity will be showed in <mark>navigation bar</mark>. This function is through the <mark>database and cookie</mark>.<br/>
+				When you <mark>click</mark> your identity, you can use the <mark>register and login</mark> function. You can <mark>update</mark> your personal information and <mark>reset</mark> your password.<br/>
+				System will <mark>checking</mark> the data you entered and it will show different messages by pop up window if you entered incorrectly.<br/></h4>
+			</div>
+			<div class="slide" data-anchor="slide6">
 				<h3>If you feel interested, you can click <mark><a href="https://github.com/jillchiu/myweb/tree/main/jillchiu">here</a></mark> to view source code.<br/>
 				This website will be <mark>updated irregularly</mark>.</h3>		
 			</div>

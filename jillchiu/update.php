@@ -21,6 +21,7 @@
 			<p>2022/02/15 Pictures in about.php in pop up mode can be zoom-in and zoom-out now --Updated main.css, about.php, script.js</p>
 			<p>2022/02/23 Pictures in index.php can be auto-loop, pop up, zoom-in and zoom-out now. ; Fix the miss in main.css and header.php --Updated header.php, index.php, main.css, script.js</p>
 			<p>2022/05/15 Version 2.0 releases </p>
+			<p>2022/07/10 Version 2.1 releases --register, login, edit, cookie function</p>
 			<h2>Going to update</h2>
 			<ol>
 				<li style="margin-left: 20px;">新功能 - 追加運用MYSQL部分(similar shopping cert?)</li>

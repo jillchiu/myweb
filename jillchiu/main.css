@@ -12,7 +12,7 @@ html {
 	/* 選單 start */
 	
 header{
-	z-index: 4;
+	z-index: 50;
 	position: fixed;
 }
 	
@@ -64,6 +64,10 @@ header{
 	padding: 15px;
 }
 
+.h_from_right button {
+	cursor: pointer;
+	border: none;
+}
 	/* navbar end */
 
 /* header end */
