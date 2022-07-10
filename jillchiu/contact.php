@@ -4,60 +4,63 @@
 	
 	if($_SERVER["REQUEST_METHOD"]=="POST"){
 		
-		$name = $_POST["name"];
-		$email = $_POST["email"];
-		$message = $_POST["message"];
-		
-		$reg_email = "/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/";
-		//清除奇怪的東西
-		$email_first_tier = filter_var($email, FILTER_SANITIZE_EMAIL);
-		
-		//即使input設定required, 純空格仍然能通過條件
-		if(str_replace(" ", "", $name)==null){
-			echo "<script>alert('Please enter your name!');</script>";
-			echo "<script>$(function(){ callback('$name', '$email', '$message'); });</script>";
-			//^分2行會沒反應
-			echo "<script>$(function(){ $('#name').css('box-shadow', '0 0 3px #CC0000'); });</script>";
-		}else if(!preg_match($reg_email, $email_first_tier) || filter_var($email_first_tier, FILTER_VALIDATE_EMAIL) === false){
-			//prevent spam mail
-			echo "<script>alert('Please enter valid email!');</script>";
-			echo "<script>$(function(){ callback('$name', '$email', '$message'); });</script>";
-			echo "<script>$(function(){ $('#email').css('box-shadow', '0 0 3px #CC0000'); });</script>";
-		}else if (str_replace(" ", "", $message)==null){
-			echo "<script>alert('Please enter message!');</script>";
-			echo "<script>$(function(){ callback('$name', '$email', '$message'); });</script>";		
-			echo "<script>$(function(){ $('#message').css('box-shadow', '0 0 3px #CC0000'); });</script>";
-		}else{
-			//connect DB
-			try{
-				$db = "localhost";
-				$user_name = "root";
-				$user_pw = "";
-				$dbname = "myweb";
-				date_default_timezone_set("UTC");
-				$date = date("Y-m-d h:i:sa");
-				
-				//處理DB連接跟INSERT錯誤
-				if(! $connect_db = new mysqli($db, $user_name, $user_pw, $dbname)){
-					throw exception ($e);
-				}else{
-					$insert = "insert into contact (name, email, message, date) values ('$name', '$email', '$message', '$date')";
-
-					if(!$send = $connect_db->query($insert)){
-						throw new exception ($e);
+		$submit = $_POST["submit"];
+						
+		if($submit=="SEND"){
+			$name = $_POST["name"];
+			$email = $_POST["email"];
+			$message = $_POST["message"];
+			
+			$reg_email = "/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/";
+			//清除奇怪的東西
+			$email_first_tier = filter_var($email, FILTER_SANITIZE_EMAIL);
+			
+			//即使input設定required, 純空格仍然能通過條件
+			if(str_replace(" ", "", $name)==null){
+				echo "<script>alert('Please enter your name!');</script>";
+				echo "<script>$(function(){ callback('$name', '$email', '$message'); });</script>";
+				//^分2行會沒反應
+				echo "<script>$(function(){ $('#name').css('box-shadow', '0 0 3px #CC0000'); });</script>";
+			}else if(!preg_match($reg_email, $email_first_tier) || filter_var($email_first_tier, FILTER_VALIDATE_EMAIL) === false){
+				//prevent spam mail
+				echo "<script>alert('Please enter valid email!');</script>";
+				echo "<script>$(function(){ callback('$name', '$email', '$message'); });</script>";
+				echo "<script>$(function(){ $('#email').css('box-shadow', '0 0 3px #CC0000'); });</script>";
+			}else if (str_replace(" ", "", $message)==null){
+				echo "<script>alert('Please enter message!');</script>";
+				echo "<script>$(function(){ callback('$name', '$email', '$message'); });</script>";		
+				echo "<script>$(function(){ $('#message').css('box-shadow', '0 0 3px #CC0000'); });</script>";
+			}else{
+				//connect DB
+				try{
+					$db = "localhost";
+					$user_name = "root";
+					$user_pw = "";
+					$dbname = "myweb";
+					date_default_timezone_set("UTC");
+					$date = date("Y-m-d h:i:sa");
+					
+					//處理DB連接跟INSERT錯誤
+					if(! $connect_db = new mysqli($db, $user_name, $user_pw, $dbname)){
+						throw exception ($e);
 					}else{
-						echo "<script>alert('Success to send me message!')</script>";
+						$insert = "insert into contact (name, email, message, date) values ('$name', '$email', '$message', '$date')";
+
+						if(!$send = $connect_db->query($insert)){
+							throw new exception ($e);
+						}else{
+							echo "<script>alert('Success to send me message!')</script>";
+						}
 					}
+					
+				}catch (exception $e){
+					echo "<script>alert('Sorry! Error occurred! Please contact me by mail and tell me that you met an error.')</script>";
 				}
 				
-			}catch (exception $e){
-				echo "<script>alert('Sorry! Error occurred! Please contact me by mail and tell me that you met an error.')</script>";
 			}
-			
-		}
 		
+		}
 	}
-	
 ?>
 <title>Contact me</title>
 <div class="background_layer_1">
