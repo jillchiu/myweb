@@ -9,4 +9,4 @@ https://github.com/jillchiu/myweb/tree/main/Final%20Year%20Project <br/>
 my shopping cart (1) (using PHP, HTML, CSS, JavaScript): <br/>
 https://github.com/jillchiu/myweb/tree/main/shopping_cart%20(php) <br/>
 my shopping cart (2) (using React, HTML, CSS, JavaScript): <br/>
-https://github.com/jillchiu/myweb/tree/main/shopping_cart%20(react) <br/>
+[https://github.com/jillchiu/myweb/tree/main/shopping_cart%20(react)](https://github.com/jillchiu/myweb/tree/main/shopping-cart%20(react))https://github.com/jillchiu/myweb/tree/main/shopping-cart%20(react) <br/>
