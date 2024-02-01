@@ -9,4 +9,4 @@ Shopping cart (1) (using PHP, HTML, CSS, JavaScript)
 <li>(source code): https://github.com/jillchiu/myweb/tree/main/shopping_cart%20(php)</li></ul>
 Shopping cart (2) (using React, HTML, CSS, JavaScript)
 <ul><li>(demo): https://jillchiu.github.io/shopping-cart/</li>
-<li>(source code): https://github.com/jillchiu/shopping_cart_react</li></ul>
+<li>(source code): https://github.com/jillchiu/myweb/tree/main/shopping-cart%20(react)</li></ul>
