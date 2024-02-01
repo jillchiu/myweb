@@ -11,4 +11,4 @@ my shopping cart (1) (using PHP, HTML, CSS, JavaScript): <br/>
 <li>(source code): https://github.com/jillchiu/myweb/tree/main/shopping_cart%20(php)</li></ul>
 my shopping cart (2) (using React, HTML, CSS, JavaScript): <br/>
 <ul><li>(demo): https://jillchiu.github.io/shopping-cart/</li>
-<li>(source code): https://github.com/jillchiu/myweb/tree/main/shopping-cart</li></ul>
+<li>(source code): https://github.com/jillchiu/shopping-cart</li></ul>
