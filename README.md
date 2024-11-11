@@ -8,7 +8,7 @@ Final year project (using PHP, HTML, CSS, MySQL, XML, JSON, CSV)
 <ul><li>(source code): https://github.com/jillchiu/myweb/tree/main/Final%20Year%20Project </li></ul>
 Shopping cart (1) (using PHP, HTML, CSS, JavaScript)
 <img src="https://i.imgur.com/Kj3xk7K.png" />
-<ul><li>(demo): https://jillchiushoppingcartreact.000webhostapp.com/</li>
+<ul><li>(demo): http://jillll0329.lovestoblog.com/</li>
 <li>(source code): https://github.com/jillchiu/myweb/tree/main/shopping_cart%20(php)</li></ul>
 Shopping cart (2) (using React, HTML, CSS, JavaScript)
 <img src="https://i.imgur.com/8P5Yejd.png" />
